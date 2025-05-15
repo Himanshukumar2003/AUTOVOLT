@@ -1170,7 +1170,6 @@ header {
 
 .product-showcase {
     display: flex;
-    align-items: center;
     background-color: white;
     border-radius: 16px;
     overflow: hidden;
