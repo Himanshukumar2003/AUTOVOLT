@@ -14,6 +14,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="index.css">
 </head>
@@ -440,6 +441,135 @@
         </div>
     </section>
 
+    <section class="reviews-section">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="reviews-header">
+                        <div class="client-reviews-label">CLIENT REVIEWS</div>
+                        <h2 class="reviews-title">Read Clients Story Of <span class="highlight">Electronic
+                                Invention</span></h2>
+
+                        <p class="reviews-text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p class="reviews-text">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.
+                        </p>
+
+                        <button class="view-all-btn">VIEW ALL REVIEWS</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="swiper reviewsSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Review Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="stars">
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                    </div>
+                                    <p class="review-text">
+                                        Duis aute irure dolor in repre hend in volu ptate velites mollit anim id.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt.
+                                    </p>
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-img">
+                                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reviewer">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <h5 class="reviewer-name">NELSON HIEM</h5>
+                                            <p class="reviewer-position">Director</p>
+                                        </div>
+                                        <div class="quote-icon">❝</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Review Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="stars">
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                    </div>
+                                    <p class="review-text">
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit.
+                                    </p>
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-img">
+                                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Reviewer">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <h5 class="reviewer-name">SARAH JOHNSON</h5>
+                                            <p class="reviewer-position">CEO</p>
+                                        </div>
+                                        <div class="quote-icon">❝</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Review Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="stars">
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                    </div>
+                                    <p class="review-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                                    </p>
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-img">
+                                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Reviewer">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <h5 class="reviewer-name">MICHAEL CHEN</h5>
+                                            <p class="reviewer-position">Technical Lead</p>
+                                        </div>
+                                        <div class="quote-icon">❝</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="satisfaction-stats">
+                        <div class="stars-row">
+                            <i class="star-icon">★</i>
+                            <i class="star-icon">★</i>
+                            <i class="star-icon">★</i>
+                            <i class="star-icon">★</i>
+                            <i class="star-icon">★</i>
+                        </div>
+                        <p class="stats-text">
+                            <span class="highlight-stat">99.9% Customer Satisfaction</span> based on 550+ reviews of
+                            2,250 Completed Projects, and 2,820 Happy Customers trust us.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <!-- <div class="cta-section">
@@ -642,5 +772,9 @@
         });
     </script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script src="index.js"></script>
+
 
 </html>

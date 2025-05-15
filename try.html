@@ -4,41 +4,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEOX Footer - Design 2</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>AUTOVOLT Reviews Section</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <style>
-        :root {
-            --primary-color: #FFA500;
-            --primary-dark: #FF8C00;
-            --primary-light: #FFD700;
-            --secondary-color: #FF6347;
-            --dark-color: #222222;
-            --darker-color: #111111;
-            --white: #ffffff;
-            --light-gray: #f5f5f5;
-            --text-gray: #e0e0e0;
-            --text-dark: #333333;
-        }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
     </style>
+
 </head>
 
 <body>
+    <section class="reviews-section">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="reviews-header">
+                        <div class="client-reviews-label">CLIENT REVIEWS</div>
+                        <h2 class="reviews-title">Read Clients Story Of <span class="highlight">Electronic
+                                Invention</span></h2>
 
+                        <p class="reviews-text">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p class="reviews-text">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.
+                        </p>
 
+                        <button class="view-all-btn">VIEW ALL REVIEWS</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="swiper reviewsSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Review Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="stars">
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                    </div>
+                                    <p class="review-text">
+                                        Duis aute irure dolor in repre hend in volu ptate velites mollit anim id.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt.
+                                    </p>
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-img">
+                                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reviewer">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <h5 class="reviewer-name">NELSON HIEM</h5>
+                                            <p class="reviewer-position">Director</p>
+                                        </div>
+                                        <div class="quote-icon">❝</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Review Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="stars">
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                    </div>
+                                    <p class="review-text">
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit.
+                                    </p>
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-img">
+                                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Reviewer">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <h5 class="reviewer-name">SARAH JOHNSON</h5>
+                                            <p class="reviewer-position">CEO</p>
+                                        </div>
+                                        <div class="quote-icon">❝</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Review Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="stars">
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                        <i class="star-icon">★</i>
+                                    </div>
+                                    <p class="review-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                                    </p>
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-img">
+                                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Reviewer">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <h5 class="reviewer-name">MICHAEL CHEN</h5>
+                                            <p class="reviewer-position">Technical Lead</p>
+                                        </div>
+                                        <div class="quote-icon">❝</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="satisfaction-stats">
+                        <div class="stars-row">
+                            <i class="star-icon">★</i>
+                            <i class="star-icon">★</i>
+                            <i class="star-icon">★</i>
+                            <i class="star-icon">★</i>
+                            <i class="star-icon">★</i>
+                        </div>
+                        <p class="stats-text">
+                            <span class="highlight-stat">99.9% Customer Satisfaction</span> based on 550+ reviews of
+                            2,250 Completed Projects, and 2,820 Happy Customers trust us.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Swiper
+            const swiper = new Swiper('.reviewsSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    // when window width is >= 768px
+                    768: {
+                        slidesPerView: 1,
+                    }
+                }
+            });
+
+            // Add hover effect to review cards
+            const reviewCards = document.querySelectorAll('.review-card');
+            reviewCards.forEach(card => {
+                card.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-10px)';
+                    this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.1)';
+                    this.style.transition = 'all 0.3s ease';
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.05)';
+                    this.style.transition = 'all 0.3s ease';
+                });
+            });
+
+            // View All Reviews button functionality
+            const viewAllBtn = document.querySelector('.view-all-btn');
+            if (viewAllBtn) {
+                viewAllBtn.addEventListener('click', function () {
+                    // You can replace this with actual functionality
+                    alert('View all reviews functionality will be implemented here');
+                });
+            }
+        });</script>
 </body>
 
 </html>
