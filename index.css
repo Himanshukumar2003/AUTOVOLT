@@ -2009,31 +2009,12 @@ header {
 }
 
 @media (max-width: 768px) {
+
     .collapsive-cards {
-        flex-direction: column;
-        height: auto;
+        height: 800px;
     }
 
-    .panel {
-        flex: 1;
-        margin-bottom: 15px;
-        height: 100px;
-    }
 
-    .panel.active {
-        flex: 1;
-        height: 400px;
-    }
-
-    .panel-title {
-        transform: translate(-50%, -50%) rotate(0deg);
-        font-size: 16px;
-        padding: 8px 16px;
-    }
-
-    .panel.active .panel-title {
-        transform: translate(-50%, -50%) scale(0.8) rotate(0deg);
-    }
 
     .panel-content {
         padding: 20px;
@@ -2051,5 +2032,71 @@ header {
         width: 40px;
         height: 40px;
         font-size: 18px;
+    }
+}
+
+/* about */
+
+.breadcrumb-section {
+    background: url('img/about-banner.png') no-repeat center center/cover;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.breadcrumb-content {
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.breadcrumb-nav {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.breadcrumb-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.breadcrumb-nav span.star {
+    color: var(--primary-dark);
+    /* green star */
+    font-size: 18px;
+}
+
+/* Optional: Dark overlay for better contrast */
+.breadcrumb-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 140, 0, 0.5);
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-content h1 {
+        font-size: 32px;
+    }
+
+    .breadcrumb-nav {
+        font-size: 14px;
     }
 }
