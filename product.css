@@ -1,0 +1,118 @@
+.product-page {
+    padding: var(--spacing-xl) 0;
+}
+
+.page-product-item {
+    margin-bottom: var(--spacing-xl);
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-page-content {
+    flex: 1;
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-product-image {
+    flex: 1;
+    width: 100%;
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.page-product-image img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-speed) ease;
+}
+
+.page-product-item:hover .page-product-image img {
+    transform: scale(1.05);
+}
+
+.page-product-category {
+    display: inline-block;
+    background-color: rgba(255, 165, 0, 0.1);
+    color: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--spacing-sm);
+}
+
+.product-title {
+    font-size: 28px;
+    font-weight: var(--font-weight-bold);
+    color: var(--dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.product-description {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-md);
+    font-size: 16px;
+}
+
+.features-title {
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+    color: var(--dark-color);
+    font-size: 18px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-md) 0;
+}
+
+.product-feature-item {
+    margin-bottom: var(--spacing-xs);
+    padding-left: 30px;
+    position: relative;
+    color: var(--text-dark);
+}
+
+.feature-icon {
+    position: absolute;
+    left: 0;
+
+    top: 0px;
+    color: var(--primary-color);
+}
+
+.reverse-row {
+    flex-direction: row-reverse;
+}
+
+.reverse-row .product-page-content {
+    background-color: var(--light-gray);
+}
+
+@media (max-width: 991px) {
+    .product-row {
+        flex-direction: column !important;
+    }
+
+    .page-product-image {
+        min-height: 300px;
+    }
+
+    .product-page-content {
+        padding: var(--spacing-lg);
+    }
+}
