@@ -60,3 +60,25 @@ panels.forEach((panel) => {
 function removeActiveClasses() {
   panels.forEach((panel) => panel.classList.remove("active"));
 }
+
+const swiper = new Swiper(".applications", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: false,
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
+});

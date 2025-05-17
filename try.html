@@ -2,74 +2,148 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Section</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applications Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <style>
         :root {
-            /* New Color Scheme based on AUTOVOLT logo */
-            --primary-color: #FFA500;
-            /* Orange */
-            --primary-dark: #FF8C00;
-            /* Dark Orange */
-            --primary-light: #FFD700;
-            /* Gold/Yellow */
-            --secondary-color: #FF6347;
-            /* Tomato - complementary */
-            --dark-color: #222222;
-            /* Almost Black */
-            --darker-color: #111111;
-            /* Darker Black */
-            --primary: #FFA500;
-            --primary-light: #FFD700;
-            --dark: #222222;
-            --light: #ffffff;
-            --gray: #f8f9fa;
-            --text-dark: #333333;
-            --text-light: #777777;
-            --white: #ffffff;
-            --light-gray: #f5f5f5;
-            --text-gray: #e0e0e0;
-            --text-dark: #333333;
-            /* Typography */
-            --font-family: 'Poppins', sans-serif;
-            --font-size-base: 16px;
-            --font-weight-normal: 400;
-            --font-weight-medium: 500;
-            --font-weight-bold: 700;
-            /* Spacing */
-            --spacing-xs: 0.5rem;
-            --spacing-sm: 1rem;
-            --spacing-md: 1.5rem;
-            --spacing-lg: 2rem;
-            --spacing-xl: 3rem;
-            /* Border Radius */
-            --border-radius-sm: 4px;
-            --border-radius-md: 8px;
-            --border-radius-lg: 12px;
-            /* Transitions */
-            --transition-speed: 0.3s;
-            --transition-bounce: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            --primary: #ff7a18;
+            --primary-light: #ffb347;
+            --light: #fff;
+            --dark: #333;
         }
 
         body {
-            font-family: var(--font-family);
-            font-size: var(--font-size-base);
-            color: var(--text-dark);
-            background-color: var(--white);
-            line-height: 1.6;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            font-size: 16px;
+            color: #666;
         }
     </style>
 </head>
 
 <body>
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>APPLICATIONS</h2>
+                <p>Discover electric vehicle solutions designed for high performance and innovation.</p>
+            </div>
 
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1593941707882-a5bba53b0998?auto=format&fit=crop&w=1074&q=80');">
+                        <div class="card-content">
+                            <span class="applications-label">APPLICATIONS</span>
+                            <h3>EV Electric Control System</h3>
+                            <p>Advanced control systems for performance and safety, managing power and battery health.
+                            </p>
+                            <div class="feature-grid">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                                    <div class="feature-text">Flexible</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                                    <div class="feature-text">Quick installation</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-compress-alt"></i></div>
+                                    <div class="feature-text">Long service life</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1558425845-7a1a6a3d5f4f?auto=format&fit=crop&w=1015&q=80');">
+                        <div class="card-content">
+                            <span class="applications-label">APPLICATIONS</span>
+                            <h3>PV Storage System</h3>
+                            <p>Photovoltaic storage and charging systems with integrated grid connectivity and backup
+                                features.</p>
+                            <div class="feature-grid">
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-battery-full"></i></div>
+                                    <div class="feature-text">Energy Efficient</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-solar-panel"></i></div>
+                                    <div class="feature-text">Solar Ready</div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                                    <div class="feature-text">Fast Charging</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more slides here if needed -->
+
+                </div>
+                <!-- Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1
+                },
+                992: {
+                    slidesPerView: 2
+                },
+                1200: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
